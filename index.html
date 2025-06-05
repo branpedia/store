@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bran Pedia - Panel Shop</title>
+    <meta name="description" content="cantik imut pintar pula">
+    <meta name="keywords" content="Branpedia MD Chat, Tools, Multi Fungsi, Asisten Virtual, OpenAI, ChatGPT">
+    <meta name="author" content="Bran dan M.chan">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://files.catbox.moe/2xc06k.jpg" type="image/jpeg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="settings.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+    <!-- iOS Style Notification -->
+    <div class="ios-notification" id="notification">
+        <div class="notification-header">
+            <div class="notification-title" id="notification-title"></div>
+            <button class="notification-close" id="close-notification" aria-label="Tutup notifikasi">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="notification-content" id="notification-content"></div>
+        <a href="#" class="notification-btn" id="notification-btn" target="_blank">Kunjungi</a>
+    </div>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <div class="header">
+            <button class="mode-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <div class="profile-pic-container">
+            <img src="https://ar-hosting.pages.dev/1749104409743.jpg" alt="Foto profil Bran Pedia" class="profile-pic">
+            <div class="bubble-text">
+                Shut up you bitch
+            </div>
+            <div class="status-badge">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h1 class="username">Bran Pedia</h1>
+            <p class="handle">
+                @Branpedia
+            </p>
+            <p class="bio">
+                "Sok berisik di story, pas diajak diskusi malah lost connection."
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">
+                    100rb
+                </div>
+                <div class="stat-label">
+                    Mengikuti
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">
+                    53m
+                </div>
+                <div class="stat-label">
+                    Pengikut
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">
+                    1jt
+                </div>
+                <div class="stat-label">
+                    Suka
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <a href="https://t.me/VynaaValerie" class="btn btn-secondary">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://www.instagram.com/vynaa_valerie" class="btn btn-primary">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="gallery-section">
+            <div class="section-title">
+                <span>Galeri Foto</span>
+                <a href="#" class="view-all">Lihat Semua</a>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/fl5q45.jpg" alt="Foto galeri 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/atn8iu.jpg" alt="Foto galeri 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/bq9mvm.jpg" alt="Foto galeri 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/3hijfr.jpg" alt="Foto galeri 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/icnv7h.jpg" alt="Foto galeri 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/shy9vg.jpg" alt="Foto galeri 6">
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Button -->
+        <a href="https://vynaavalerie.biz.id" class="home-btn">
+            <i class="fas fa-home"></i> Kembali ke Beranda
+        </a>
+
+        <div class="pricing-section">
+            <h3 class="pricing-title"><i class="fas fa-tags"></i> Pricelist Harga Panel⚡ Branpedia</h3>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET R1
+                </div>
+                <div class="pricing-desc">
+                    1GB RAM / 1GB Disk / 35% CPU
+                </div>
+                <div class="pricing-price">
+                    Rp 2.500 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET R2
+                </div>
+                <div class="pricing-desc">
+                    2GB RAM / 2GB Disk / 65% CPU
+                </div>
+                <div class="pricing-price">
+                    Rp 4.000 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET R3
+                </div>
+                <div class="pricing-desc">
+                    3GB RAM / 3GB Disk / 95% CPU
+                </div>
+                <div class="pricing-price">
+                    Rp 6.000 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET R4
+                </div>
+                <div class="pricing-desc">
+                    4GB RAM / 4GB Disk / 125% CPU
+                </div>
+                <div class="pricing-price">
+                    Rp 8.000 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET VIP
+                </div>
+                <div class="pricing-desc">
+                    UNLIMITED RAM / UNLIMITED DISK / UNLIMITED CPU
+                </div>
+                <div class="pricing-price">
+                    Rp 10.000 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-promo">
+                <i class="fas fa-save"></i> PROMO! PAKET VIP: UNLIMITED RAM / DISK / CPU
+            </div>
+
+            <div class="pricing-item">
+                <div class="pricing-name">
+                    <i class="fas fa-folder"></i> PAKET ADMIN
+                </div>
+                <div class="pricing-desc">
+                    BISA CREATE PANEL SEPUASNYA
+                </div>
+                <div class="pricing-price">
+                    Rp 13.000 / 1 BULAN
+                </div>
+            </div>
+
+            <div class="pricing-promo">
+                <i class="fas fa-save"></i> PROMO! PAKET ADMIN: BISA CREATE PANEL SEPUASNYA
+            </div>
+
+            <div class="pricing-benefits">
+                <span>• Tidak boros kuota & memori</span>
+                <span>• Bisa run 24 JAM</span>
+                <span>• Website di close bot tetap jalan</span>
+            </div>
+
+            <div class="pricing-links">
+                <p>Minat? Chat: <a href="https://wa.me/6285795600265?text=buy+panel" target="_blank">wa.me/6285795600265?text=buy+panel</a></p>
+                <p>LINK GRUP: <a href="https://gcbran.vercel.app" target="_blank">gcbran.vercel.app</a></p>
+            </div>
+        </div>
+
+        <!-- Video Tutorial Section -->
+        <div class="video-section">
+            <h3 class="section-title">
+                <span><i class="fas fa-video"></i> Video Tutorial</span>
+            </h3>
+            <p class="pricing-desc" style="text-align: center; padding-left: 0; margin-bottom: 15px;">
+                Cara menjalankan bot WhatsApp menggunakan panel Pterodactyl
+            </p>
+
+            <div class="video-container">
+                <video controls>
+                    <source src="https://files.catbox.moe/wrppkh.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+
+            <div class="video-share">
+                <button class="share-btn" id="copy-link" aria-label="Salin tautan video">
+                    <i class="fas fa-link"></i> Copy Link
+                </button>
+                <a href="https://wa.me/?text=Lihat%20tutorial%20run%20bot%20WhatsApp%20di%20https%3A%2F%2Fvynaavalerie.biz.id%2Fvynaashop%2Fshare-cara-run-bot-di-panel" class="share-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Share
+                </a>
+                <a href="https://t.me/share/url?url=https%3A%2F%2Fvynaavalerie.biz.id%2Fvynaashop%2Fshare-cara-run-bot-di-panel&text=Lihat%20tutorial%20run%20bot%20WhatsApp" class="share-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Share
+                </a>
+            </div>
+        </div>
+
+        <!-- Article Section -->
+        <div class="article-section">
+            <h3 class="article-title"><i class="fas fa-info-circle"></i> Apa itu Pterodactyl Panel?</h3>
+            <div class="article-content">
+                <p>
+                    Pterodactyl adalah panel manajemen server open-source yang dirancang khusus untuk game, tetapi juga sangat cocok untuk menjalankan berbagai aplikasi termasuk bot WhatsApp, Telegram, Discord, dan lainnya.
+                </p>
+
+                <p>
+                    Dengan antarmuka yang intuitif dan fitur yang lengkap, Pterodactyl memudahkan pengguna untuk:
+                </p>
+
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Mengelola server dengan mudah melalui antarmuka web</li>
+                    <li>Memantau penggunaan resource (CPU, RAM, Storage) secara real-time</li>
+                    <li>Menjalankan multiple aplikasi dalam satu panel</li>
+                    <li>Mengontrol server dari mana saja melalui browser</li>
+                </ul>
+
+                <p>
+                    Panel ini sangat cocok untuk menjalankan bot karena:
+                </p>
+
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Stabilitas tinggi dengan uptime hingga 99.9%</li>
+                    <li>Kemampuan restart otomatis jika bot crash</li>
+                    <li>Manajemen file yang mudah melalui file manager</li>
+                    <li>Dukungan untuk berbagai lingkungan runtime</li>
+                </ul>
+
+                <p>
+                    Dengan panel Pterodactyl yang kami sediakan, Anda bisa menjalankan bot WhatsApp 24/7 tanpa perlu khawatir tentang maintenance server atau masalah teknis lainnya.
+                </p>
+            </div>
+            <a href="https://wa.me/6285795600265?text=hi" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <div class="music-title">
+                Night Dreams
+            </div>
+            <div class="music-artist">
+                Bran Pedia
+            </div>
+            <div class="progress-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="time-info">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="prev-btn" aria-label="Lagu sebelumnya">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="music-btn play-btn" id="play-btn" aria-label="Putar atau jeda musik">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="next-btn" aria-label="Lagu berikutnya">
+                <i class="fas fa-step-forward"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
